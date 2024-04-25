@@ -13,8 +13,9 @@ services:
       - DB_POSTGRESDB_USER=n8n
       - DB_POSTGRESDB_PASSWORD=n8n_password
       - NODE_FUNCTION_ALLOW_EXTERNAL=pg
+      - PORT=5555
     ports:
-      - "5678:5678"
+      - "5555:5555"
     depends_on:
       - postgres
 
