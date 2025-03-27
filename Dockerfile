@@ -7,7 +7,7 @@ RUN apk add --update graphicsmagick tzdata
 USER root
 
 RUN apk --update add --virtual build-dependencies python3 build-base && \
-    npm_config_user=root npm install --location=global n8n@${N8N_VERSION} && \
+    npm_config_user=root npm install --location=global n8n@$1.84.2 && \
     apk del build-dependencies
 
 WORKDIR /data
