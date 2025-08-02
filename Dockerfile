@@ -1,6 +1,6 @@
 FROM node:18-alpine
 
-ARG N8N_VERSION=1.56.1
+ARG N8N_VERSION=latest
 
 RUN apk add --update graphicsmagick tzdata
 
